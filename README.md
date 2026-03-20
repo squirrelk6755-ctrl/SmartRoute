@@ -50,7 +50,7 @@ density — no manual input needed.
 
 ## Run locally
 ```bash
-git clone https://github.com/YOURUSERNAME/SmartRoute.git
+git clone https://github.com/squirrelk6755-ctrl/SmartRoute.git
 cd SmartRoute
 npm install
 npm run dev
