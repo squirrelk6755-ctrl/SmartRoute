@@ -1,30 +1,61 @@
-# SmartRoute — AI Pathfinding for Real-World Impact
+# ARIA — Adaptive Rescue Intelligence Agent
 
-SmartRoute is a full-stack web application that visualizes advanced pathfinding algorithms (A*, Dijkstra, BFS) in real-world scenarios. It uses Google's Gemini AI to provide natural language explanations for the chosen routes and allows users to input custom constraints.
+An intelligent pathfinding agent that finds optimal rescue routes 
+in real-world disaster scenarios using AI search algorithms.
 
-## Features
+![ARIA]
+<img width="725" height="205" alt="image" src="https://github.com/user-attachments/assets/5796d3d4-57d7-4e6b-91c0-346843aef454" />
 
-- **Interactive Map**: Set start, end, and obstacles directly on the map.
-- **Algorithm Visualization**: Watch A* explore the grid in real-time.
-- **Real-World Scenarios**: 6 preset scenarios ranging from medical emergencies to warehouse robotics.
-- **AI Explainer**: Gemini AI narrates why a specific path was chosen based on constraints.
-- **Algorithm Comparison**: Compare performance metrics (nodes explored, time, path length) across A*, BFS, and Dijkstra.
-- **Custom Constraints**: Input natural language constraints like "avoid highways" or "wheelchair accessible".
+---
+
+## What it does
+
+ARIA acts as an autonomous agent that perceives a disaster-affected 
+map, selects the best pathfinding algorithm based on terrain 
+conditions, and animates the rescue route in real time. If a road 
+gets blocked mid-route, ARIA detects it and reroutes automatically.
+
+---
+
+## Algorithms
+
+- **A\*** — optimal pathfinding using f(n) = g(n) + h(n)
+- **Greedy Best-First** — fast routing on open terrain
+- **Dijkstra** — handles weighted road costs
+- **BFS** — uniform cost exploration
+
+The agent selects the algorithm automatically based on obstacle 
+density — no manual input needed.
+
+---
+
+## Scenarios
+
+- Disaster Relief
+- Village Medical Emergency  
+- Town Ambulance
+- Warehouse Robot
+- Campus Navigation
+- Factory Fire Evacuation
+
+---
 
 ## Tech Stack
 
-- **Frontend**: React, Tailwind CSS, Leaflet.js, Framer Motion.
-- **Backend**: Node.js, Express.
-- **AI**: Google Gemini 1.5 Flash.
+- React + Vite
+- Leaflet.js + OpenStreetMap
+- JavaScript (algorithms from scratch)
 
-## Setup
+---
 
-1. Clone the repository.
-2. Install dependencies: `npm install`.
-3. Set up environment variables in `.env`:
-   - `GEMINI_API_KEY`: Your Google AI Studio API Key.
-4. Run the development server: `npm run dev`.
+## Run locally
+```bash
+git clone https://github.com/YOURUSERNAME/SmartRoute.git
+cd SmartRoute
+npm install
+npm run dev
+```
 
-## Hackathon Pitch
+Open `http://localhost:3000`
 
-In critical situations—whether it's an ambulance navigating a congested city or a disaster relief team finding survivors—every second counts. Traditional pathfinding often ignores the "why" and the "context." SmartRoute bridges this gap by combining robust mathematical algorithms with Generative AI. It doesn't just find a path; it understands constraints and explains its reasoning, making complex navigation accessible and adaptable to real-world chaos.
+---
