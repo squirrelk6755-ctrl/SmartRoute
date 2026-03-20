@@ -1,0 +1,7 @@
+{
+  "name": "SmartRoute — AI Pathfinding",
+  "description": "AI-powered pathfinding simulator with real-time algorithm visualization and Gemini-powered route explanations.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --grid-template-columns-20: repeat(20, minmax(0, 1fr));
+  --grid-template-rows-20: repeat(20, minmax(0, 1fr));
+}
+
+/* Navbar — always on top */
+header, nav {
+  position: relative;
+  z-index: 1000;
+}
+
+/* Map container — sits below navbar */
+.leaflet-container, #grid {
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
+}
